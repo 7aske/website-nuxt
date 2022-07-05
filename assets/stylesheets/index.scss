@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'FiraCode-Medium';
+	src: url("/fonts/FiraCode-Medium.ttf");
+}
+
+@mixin breakpoint($size) {
+	@if $size == sm-and-down {
+		@media (max-width: 599px) {
+			@content;
+		}
+	} @else if $size == md-and-down {
+		@media (max-width: 600px) {
+			@content;
+		}
+	} @else if $size == md-and-up {
+		@media (min-width: 600px) {
+			@content;
+		}
+	} @else if $size == lg-and-down {
+		@media (max-width: 900px) {
+			@content;
+		}
+	} @else if $size == lg-and-up {
+		@media (min-width: 900px) {
+			@content;
+		}
+	} @else if $size == xl-and-down {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	} @else if $size == xl-and-up {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}
+
+* {
+	font-family: FiraCode-Medium, 'monospace';
+}
+
+html,body {
+	overflow: initial;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center-absolute {
+	position: relative;
+	top: 10vh;
+	//left: 50%;
+	//transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.page-enter-active, .page-leave-active { transition: opacity .1s; }
+.page-enter-from, .page-leave-to { opacity: 0; }
