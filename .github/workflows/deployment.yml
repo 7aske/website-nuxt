@@ -25,8 +25,9 @@ jobs:
           path: ".output/"
           remote_path: "/srv/http/website/"
       - name: restart node
-        uses: JimCronqvist/action-ssh@master
+        uses: appleboy/ssh-action@master
         with:
-          hosts: ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP_ADDRESS }}
-          privateKey: ${{ secrets.PRIVATE_KEY }}
-          command: systemctl restart website-node
+          host: ${{ secrets.SERVER_IP_ADDRESS }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: systemctl restart website-node
