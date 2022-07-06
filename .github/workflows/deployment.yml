@@ -27,6 +27,6 @@ jobs:
       - name: restart node
         uses: JimCronqvist/action-ssh@master
         with:
-          hosts: ${{ secrets.SERVER_USERNAME }}@{{ secrets.SERVER_IP_ADDRESS }}
+          hosts: ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP_ADDRESS }}
           privateKey: ${{ secrets.PRIVATE_KEY }}
           command: systemctl restart website-node
