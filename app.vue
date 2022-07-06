@@ -1,5 +1,6 @@
 <template>
   <v-app :theme="theme">
+    <stars/>
     <v-main>
       <v-container class="d-flex justify-end" fluid>
         <v-btn @click="toggleTheme" :flat=true>
