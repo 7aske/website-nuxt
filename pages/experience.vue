@@ -17,7 +17,6 @@
 <script setup lang="ts">
 
 import { Experience } from "~/common/Experience";
-import {underline} from "kolorist";
 
 const experiences: Experience[] = [
   {
