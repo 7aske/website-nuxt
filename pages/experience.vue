@@ -17,11 +17,12 @@
 <script setup lang="ts">
 
 import { Experience } from "~/common/Experience";
+import {underline} from "kolorist";
 
 const experiences: Experience[] = [
   {
-    position: "Backend developer",
-    description: "Backend developer at Vega IT",
+    position: "Backend developer, Tech mentor",
+    description: "Software engineer at Vega IT working on various projects and as a Java Tech mentor. Work included working on a service-oriented employee skill and status tracking system as a Backend developer, crypto-currency banking integration system mainly as a Spring Boot Developer and also as a Full-stack developer using MERN stack. Together with regular engagements, my tasks included mentoring and helping colleagues master Java related technologies as a part of my Tech mentor role. There I was in charge of conducting daily code reviews, teaching sessions, tracking theirprogress and organizing mock interviews.",
     startDate: new Date(2022, 1),
   },
   {
@@ -37,15 +38,16 @@ const experiences: Experience[] = [
     endDate: new Date(2021, 5),
   },
   {
-    position: "Fullstack developer",
-    description: "Developed and deployed a web system consisting of a website, webshop and a blog for a local massage centre",
+    position: "Full-stack developer",
+    description: "Developed and deployed a web system consisting of a website, a webshop and a blog for a local massage centre",
     startDate: new Date(2020, 1),
     endDate: new Date(2020, 7),
   },
   {
-    position: "Fullstack developer, Devops engineer",
+    position: "Full-stack developer, Devops engineer",
     description: "Intern at Metropolitan University Faculty of Information Technologies involved in development of service oriented informational systems mostly using Angular, React, Spring Boot and Flask. Experience in setting up production environments and deploying to Ubuntu and CentOS servers. Took part in great deal of problem solving and debugging of production systems. Experience in database design, backup and migrations using mostly MySQL but also NoSQL databases such as MongoDB. Mostly focused on developing clean backend API's with complex database structure.",
     startDate: new Date(2019, 9),
+    endDate: new Date(2022, 5),
   },
   {
     position: "Student",
@@ -53,17 +55,21 @@ const experiences: Experience[] = [
     startDate: new Date(2018, 9),
   },
   {
-    position: "Fullstack developer",
+    position: "Full-stack developer",
     description: "Developer working on fixing last-minute issues in a complex distributed .NET Core application for for Croatian HGK.",
     startDate: new Date(2021, 11),
     endDate: new Date(2021, 11),
   },
-  {
-    position: "Fullstack developer",
-    description: "Developer working on re-writing a HR salary application from COBOL to Java using Spring Boot, Thymeleaf and MySQL.",
-    startDate: new Date(2022, 3),
-  },
+  // {
+  //   position: "Full-stack developer",
+  //   description: "Developer working on re-writing a HR salary application from COBOL to Java using Spring Boot, Thymeleaf and MySQL.",
+  //   startDate: new Date(2022, 3),
+  // },
 ];
 
-experiences.sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
+experiences.sort((a, b) => {
+  if (a.endDate === undefined) return 1;
+  if (b.endDate === undefined) return 0;
+  return b.endDate.getTime() - a.endDate.getTime()
+});
 </script>
