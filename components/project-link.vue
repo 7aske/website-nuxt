@@ -33,6 +33,7 @@
 
 
 .tech {
+  display: inline-block;
   transition: opacity 250ms;
   opacity: 0;
   font-size: .8rem;
