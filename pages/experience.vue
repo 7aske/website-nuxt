@@ -16,12 +16,12 @@
 
 <script setup lang="ts">
 
-import { Experience } from "~/common/Experience";
+import {Experience} from "~/common/Experience";
 
 const experiences: Experience[] = [
   {
     position: "Backend developer, Tech mentor",
-    description: "Software engineer at Vega IT working on various projects and as a Java Tech mentor. Work included working on a service-oriented employee skill and status tracking system as a Backend developer, crypto-currency banking integration system mainly as a Spring Boot Developer and also as a Full-stack developer using MERN stack. Together with regular engagements, my tasks included mentoring and helping colleagues master Java related technologies as a part of my Tech mentor role. There I was in charge of conducting daily code reviews, teaching sessions, tracking theirprogress and organizing mock interviews.",
+    description: "Software engineer at Vega IT working on various projects and as a Java Tech mentor. Work included working on a service-oriented employee skill and status tracking system as a Backend developer, crypto-currency banking integration system mainly as a Spring Boot Developer and also as a Full-stack developer using MERN stack. Together with regular engagements, my tasks included mentoring and helping colleagues master Java related technologies as a part of my Tech mentor role. There I was in charge of conducting daily code reviews, teaching sessions, tracking their progress and organizing mock interviews. Also, I was in charge of conducting regular technical interviews for both frontend and backend positions of various seniority.",
     startDate: new Date(2022, 1),
   },
   {
@@ -50,8 +50,9 @@ const experiences: Experience[] = [
   },
   {
     position: "Student",
-    description: "Student at Metropolitan University Faculty of Information Technologies department of software engineering.",
+    description: "Graduated at Metropolitan University Faculty of Information Technologies department of software engineering.",
     startDate: new Date(2018, 9),
+    endDate: new Date(2022, 10),
   },
   {
     position: "Full-stack developer",

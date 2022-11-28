@@ -24,6 +24,24 @@ const projs: Project[] = [
     description: "A programming language written in C",
   },
   {
+    name: "strap",
+    href: "https://github.com/7aske/stapparser",
+    technologies: ["Kotlin"],
+    description: "Spring Boot application generator based on a simple DSL",
+  },
+  {
+    name: "pagesave",
+    href: "https://github.com/7aske/pagesave",
+    technologies: ["Quarkus", "Kotlin", "GraalVM", "Docker"],
+    description: "Service that takes a screenshot of a webpage serves it as an image",
+  },
+  {
+    name: "grain",
+    technologies: ["Java", "JUnit5"],
+    href: "https://github.com/7aske/grain",
+    description: "Zero dependency web framework",
+  },
+  {
     name: "frigo",
     technologies: ["Spring Boot", "MariaDB", "Flyway", "Angular"],
     href: "https://frigonekretnine.com",
@@ -40,12 +58,6 @@ const projs: Project[] = [
     technologies: ["TypeScript"],
     href: "https://github.com/7aske/springstrap",
     description: "Spring project code generator",
-  },
-  {
-    name: "grain",
-    technologies: ["Java", "JUnit5"],
-    href: "https://github.com/7aske/grain",
-    description: "Zero dependency web framework",
   },
   {
     name: "rgs",

@@ -1,7 +1,11 @@
 <template>
   <span class="position-subheader">{{ experience.position }}</span><br/>
   <span
-      class="date-subheader">{{ formatDate(experience.startDate) }} -&gt; {{ experience.endDate ? formatDate(experience.endDate) : "undefined" }}</span><br/>
+      class="date-subheader">{{
+      formatDate(experience.startDate)
+    }} -&gt; {{
+      experience.endDate ? formatDate(experience.endDate) : "undefined"
+    }}</span><br/>
   {{ experience.description }}
   <br>
   <br>
@@ -19,16 +23,15 @@
 </style>
 
 <script lang="ts">
-import { formatDate } from "~/common/util/date";
+import {formatDate} from "~/common/util/date";
+import {Experience} from "~/common/Experience";
 
 export default {
   props: {
-    experience: Object,
+    experience: Experience,
   },
   methods: {
-    formatDate(date: Date) {
-      return formatDate(date);
-    },
+    formatDate,
   },
 };
 </script>
