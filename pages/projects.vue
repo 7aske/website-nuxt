@@ -25,7 +25,7 @@ const projs: Project[] = [
   },
   {
     name: "strap",
-    href: "https://github.com/7aske/stapparser",
+    href: "https://github.com/7aske/strapparser",
     technologies: ["Kotlin"],
     description: "Spring Boot application generator based on a simple DSL",
   },
