@@ -4,7 +4,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+	"start": "nuxt start"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
@@ -18,5 +19,6 @@
   "dependencies": {
     "custom-vue-scrollbar": "^0.0.7",
     "vuetify": "3.0.0-beta.1"
-  }
+  },
+ "engines": { "node" : "18.15.0" }
 }
