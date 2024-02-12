@@ -18,5 +18,5 @@
     "custom-vue-scrollbar": "^0.0.7",
     "vuetify": "3.0.0-beta.1"
   },
- "engines": { "node" : "18.15.0" }
+ "engines": { "node" : "18.19.0" }
 }
